@@ -1,0 +1,15 @@
+let rodas = prompt ("Digite a quantidade de rodas")
+let peso = prompt ("Digite o peso bruto em quilogramas")
+let pessoas = prompt ("Digite a quantidade de pessoas no veículo")
+
+if (rodas <= 3) {
+  console.log("A melhor categoria de Habilitação será A");
+} else if (rodas == 4 && pessoas <= 8 && peso <= 3500) {
+  console.log("A melhor categoria de Habilitação será B");
+} else if (rodas >= 4 && peso >= 3500 && peso <= 6000) {
+  console.log("A melhor categoria de Habilitação será C");
+} else if (rodas >= 4 && pessoas > 8) {
+  console.log("A melhor categoria de Habilitação será D");
+} else if (rodas >= 4 && peso > 6000) {
+  console.log("A melhor categoria de Habilitação será E");
+}
