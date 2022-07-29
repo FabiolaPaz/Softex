@@ -1,0 +1,19 @@
+function sleep(milliseconds) {
+    return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
+async function main() {
+    //Escrevendo no console o inicio da contagem regressiva! 
+    console.log("Iniciando contagem regressiva");
+    //Laço de repetição
+    for ( let i = 10; i >= 0; i--) {
+        //Laço de repetição
+    console.log (i)
+    //Função para esperar segundos
+    await sleep(1000);
+}
+    console.log ("BUM");
+   
+}
+
+main()
