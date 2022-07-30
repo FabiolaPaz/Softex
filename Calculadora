@@ -1,0 +1,26 @@
+function calculadora(x, y, z) {
+
+    switch (z) {
+        case 1:
+            return x + y;
+            break;
+        case 2:
+            return x - y;
+            break;
+        case 3:
+            return x * y;
+            break;
+        case 4:
+            return x / y;
+            break;
+        default:
+            return 0;
+    }
+}
+
+let n1 = 5;
+let n2 = 2;
+let t = 1;
+let calcular = calculadora(n1, n2, t);
+
+console.log(calcular)
